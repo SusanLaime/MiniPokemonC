@@ -1,0 +1,45 @@
+digraph G {
+  node [shape=plaintext];
+  struct1 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightblue"><B>Producción</B></TD><TD BGCOLOR="lightblue"><B>SELECT</B></TD></TR>
+      <TR><TD>programa -&gt; sentencia sentencia_rest </TD><TD>VAROOM INDEEDEE PRINPLUP INCINEROAR GARDEVOIR WAILMER FORRETRESS BRAIXEN TINGLU </TD></TR>
+      <TR><TD>sentencia_rest -&gt; sentencia sentencia_rest </TD><TD>VAROOM INDEEDEE PRINPLUP INCINEROAR GARDEVOIR WAILMER FORRETRESS BRAIXEN TINGLU </TD></TR>
+      <TR><TD>sentencia_rest -&gt; epsilon </TD><TD>$ </TD></TR>
+      <TR><TD>sentencia -&gt; decl_var </TD><TD>VAROOM </TD></TR>
+      <TR><TD>sentencia -&gt; asignacion </TD><TD>INDEEDEE </TD></TR>
+      <TR><TD>sentencia -&gt; impresion </TD><TD>PRINPLUP </TD></TR>
+      <TR><TD>sentencia -&gt; condicional </TD><TD>INCINEROAR </TD></TR>
+      <TR><TD>sentencia -&gt; bloque </TD><TD>GARDEVOIR </TD></TR>
+      <TR><TD>sentencia -&gt; bucle_while </TD><TD>WAILMER </TD></TR>
+      <TR><TD>sentencia -&gt; bucle_for </TD><TD>FORRETRESS </TD></TR>
+      <TR><TD>sentencia -&gt; sentencia_control </TD><TD>BRAIXEN TINGLU </TD></TR>
+      <TR><TD>decl_var -&gt; VAROOM INDEEDEE SEEL expr PANCHAM </TD><TD>VAROOM </TD></TR>
+      <TR><TD>asignacion -&gt; INDEEDEE SEEL expr PANCHAM </TD><TD>INDEEDEE </TD></TR>
+      <TR><TD>impresion -&gt; PRINPLUP ZACIAN expr ZAMAZENTA PANCHAM </TD><TD>PRINPLUP </TD></TR>
+      <TR><TD>condicional -&gt; INCINEROAR ZACIAN condicion ZAMAZENTA bloque else_opt </TD><TD>INCINEROAR </TD></TR>
+      <TR><TD>else_opt -&gt; ELEKID bloque </TD><TD>ELEKID </TD></TR>
+      <TR><TD>else_opt -&gt; epsilon </TD><TD>VAROOM INDEEDEE PRINPLUP INCINEROAR GARDEVOIR WAILMER FORRETRESS BRAIXEN TINGLU $ GALLADE </TD></TR>
+      <TR><TD>bloque -&gt; GARDEVOIR sentencias_bloque GALLADE </TD><TD>GARDEVOIR </TD></TR>
+      <TR><TD>sentencias_bloque -&gt; sentencia sentencias_bloque </TD><TD>VAROOM INDEEDEE PRINPLUP INCINEROAR GARDEVOIR WAILMER FORRETRESS BRAIXEN TINGLU </TD></TR>
+      <TR><TD>sentencias_bloque -&gt; epsilon </TD><TD>GALLADE </TD></TR>
+      <TR><TD>bucle_while -&gt; WAILMER ZACIAN condicion ZAMAZENTA bloque </TD><TD>WAILMER </TD></TR>
+      <TR><TD>bucle_for -&gt; FORRETRESS ZACIAN VAROOM INDEEDEE SEEL expr PANCHAM condicion PANCHAM INDEEDEE SEEL expr ZAMAZENTA bloque </TD><TD>FORRETRESS </TD></TR>
+      <TR><TD>sentencia_control -&gt; BRAIXEN PANCHAM </TD><TD>BRAIXEN </TD></TR>
+      <TR><TD>sentencia_control -&gt; TINGLU PANCHAM </TD><TD>TINGLU </TD></TR>
+      <TR><TD>condicion -&gt; expr op_rel expr </TD><TD>NUMEL INDEEDEE </TD></TR>
+      <TR><TD>op_rel -&gt; QUAQUAVAL </TD><TD>QUAQUAVAL </TD></TR>
+      <TR><TD>op_rel -&gt; GREEDENT </TD><TD>GREEDENT </TD></TR>
+      <TR><TD>op_rel -&gt; LEDIAN </TD><TD>LEDIAN </TD></TR>
+      <TR><TD>expr -&gt; termino expr_rest </TD><TD>NUMEL INDEEDEE </TD></TR>
+      <TR><TD>expr_rest -&gt; op_arit termino expr_rest </TD><TD>PLUSLE MINUN PORYGON DITTO </TD></TR>
+      <TR><TD>expr_rest -&gt; epsilon </TD><TD>PANCHAM ZAMAZENTA QUAQUAVAL GREEDENT LEDIAN </TD></TR>
+      <TR><TD>termino -&gt; NUMEL </TD><TD>NUMEL </TD></TR>
+      <TR><TD>termino -&gt; INDEEDEE </TD><TD>INDEEDEE </TD></TR>
+      <TR><TD>op_arit -&gt; PLUSLE </TD><TD>PLUSLE </TD></TR>
+      <TR><TD>op_arit -&gt; MINUN </TD><TD>MINUN </TD></TR>
+      <TR><TD>op_arit -&gt; PORYGON </TD><TD>PORYGON </TD></TR>
+      <TR><TD>op_arit -&gt; DITTO </TD><TD>DITTO </TD></TR>
+    </TABLE>
+  >];
+}

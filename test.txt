@@ -1,0 +1,3 @@
+varoom g = 10;
+
+varoom y = 10;

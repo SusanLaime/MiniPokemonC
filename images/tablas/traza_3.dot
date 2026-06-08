@@ -1,0 +1,22 @@
+digraph G {
+  node [shape=plaintext];
+  struct1 [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD BGCOLOR="lightgray" COLSPAN="4"><B>Traza LL(1) - Sentencia 3: varoom contador = 0 ;</B></TD></TR>
+      <TR><TD BGCOLOR="#1F618D"><FONT COLOR="white"><B>Paso</B></FONT></TD><TD BGCOLOR="#1F618D"><FONT COLOR="white"><B>Pila</B></FONT></TD><TD BGCOLOR="#1F618D"><FONT COLOR="white"><B>Entrada</B></FONT></TD><TD BGCOLOR="#1F618D"><FONT COLOR="white"><B>Acción</B></FONT></TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">1</TD><TD BGCOLOR="#EBF5FB">$ programa</TD><TD BGCOLOR="#EBF5FB">VAROOM INDEEDEE SEEL NUMEL PANCHAM $</TD><TD BGCOLOR="#EBF5FB">programa -&gt; sentencia sentencia_rest</TD></TR>
+      <TR><TD BGCOLOR="#D6EAF8">2</TD><TD BGCOLOR="#D6EAF8">$ sentencia_rest sentencia</TD><TD BGCOLOR="#D6EAF8">VAROOM INDEEDEE SEEL NUMEL PANCHAM $</TD><TD BGCOLOR="#D6EAF8">sentencia -&gt; decl_var</TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">3</TD><TD BGCOLOR="#EBF5FB">$ sentencia_rest decl_var</TD><TD BGCOLOR="#EBF5FB">VAROOM INDEEDEE SEEL NUMEL PANCHAM $</TD><TD BGCOLOR="#EBF5FB">decl_var -&gt; VAROOM INDEEDEE SEEL expr PANCHAM</TD></TR>
+      <TR><TD BGCOLOR="#D6EAF8">4</TD><TD BGCOLOR="#D6EAF8">$ sentencia_rest PANCHAM expr SEEL INDEEDEE VAROOM</TD><TD BGCOLOR="#D6EAF8">VAROOM INDEEDEE SEEL NUMEL PANCHAM $</TD><TD BGCOLOR="#D6EAF8">Match VAROOM</TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">5</TD><TD BGCOLOR="#EBF5FB">$ sentencia_rest PANCHAM expr SEEL INDEEDEE</TD><TD BGCOLOR="#EBF5FB">INDEEDEE SEEL NUMEL PANCHAM $</TD><TD BGCOLOR="#EBF5FB">Match INDEEDEE</TD></TR>
+      <TR><TD BGCOLOR="#D6EAF8">6</TD><TD BGCOLOR="#D6EAF8">$ sentencia_rest PANCHAM expr SEEL</TD><TD BGCOLOR="#D6EAF8">SEEL NUMEL PANCHAM $</TD><TD BGCOLOR="#D6EAF8">Match SEEL</TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">7</TD><TD BGCOLOR="#EBF5FB">$ sentencia_rest PANCHAM expr</TD><TD BGCOLOR="#EBF5FB">NUMEL PANCHAM $</TD><TD BGCOLOR="#EBF5FB">expr -&gt; termino expr_rest</TD></TR>
+      <TR><TD BGCOLOR="#D6EAF8">8</TD><TD BGCOLOR="#D6EAF8">$ sentencia_rest PANCHAM expr_rest termino</TD><TD BGCOLOR="#D6EAF8">NUMEL PANCHAM $</TD><TD BGCOLOR="#D6EAF8">termino -&gt; NUMEL</TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">9</TD><TD BGCOLOR="#EBF5FB">$ sentencia_rest PANCHAM expr_rest NUMEL</TD><TD BGCOLOR="#EBF5FB">NUMEL PANCHAM $</TD><TD BGCOLOR="#EBF5FB">Match NUMEL</TD></TR>
+      <TR><TD BGCOLOR="#D6EAF8">10</TD><TD BGCOLOR="#D6EAF8">$ sentencia_rest PANCHAM expr_rest</TD><TD BGCOLOR="#D6EAF8">PANCHAM $</TD><TD BGCOLOR="#D6EAF8">expr_rest -&gt; epsilon</TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">11</TD><TD BGCOLOR="#EBF5FB">$ sentencia_rest PANCHAM</TD><TD BGCOLOR="#EBF5FB">PANCHAM $</TD><TD BGCOLOR="#EBF5FB">Match PANCHAM</TD></TR>
+      <TR><TD BGCOLOR="#D6EAF8">12</TD><TD BGCOLOR="#D6EAF8">$ sentencia_rest</TD><TD BGCOLOR="#D6EAF8">$</TD><TD BGCOLOR="#D6EAF8">sentencia_rest -&gt; epsilon</TD></TR>
+      <TR><TD BGCOLOR="#EBF5FB">13</TD><TD BGCOLOR="#EBF5FB">$</TD><TD BGCOLOR="#EBF5FB">$</TD><TD BGCOLOR="#EBF5FB">ACEPTAR</TD></TR>
+    </TABLE>
+  >];
+}

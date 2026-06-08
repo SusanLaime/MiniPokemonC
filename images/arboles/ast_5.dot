@@ -1,0 +1,9 @@
+digraph G {
+  bgcolor="#f8f9fa";
+  labelloc="t";
+  labeljust="l";
+  label="AST — prinplup ( x ) ;";
+  node0 [label="PRINPLUP", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node1 [label="x", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node0 -> node1;
+}

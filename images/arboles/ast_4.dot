@@ -1,0 +1,15 @@
+digraph G {
+  bgcolor="#f8f9fa";
+  labelloc="t";
+  labeljust="l";
+  label="AST — x = x + 1 ;";
+  node0 [label="=", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node1 [label="x", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node0 -> node1;
+  node2 [label="+", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node0 -> node2;
+  node3 [label="x", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node2 -> node3;
+  node4 [label="1", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node2 -> node4;
+}

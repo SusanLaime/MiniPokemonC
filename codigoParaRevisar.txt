@@ -1,0 +1,33 @@
+varoom g = 10;
+
+varoom y = 10;
+
+varoom contador = 0;
+
+x = x + 1;
+
+prinplup(x);
+
+incineroar (x > y) {
+    prinplup(x);
+} elekid {
+    prinplup(y);
+}
+
+wailmer (contador < 5) {
+    contador = contador + 1;
+    incineroar (contador == 3) {
+        braixen;
+    }
+}
+
+forretress (varoom i = 0; i < 10; i = i + 1) {
+    incineroar (i == 5) {
+        ting-lu;
+    }
+    prinplup(i);
+}
+
+varoom resultado = 4 * 3;
+
+varoom frac = 10 / 2;

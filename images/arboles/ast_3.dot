@@ -1,0 +1,11 @@
+digraph G {
+  bgcolor="#f8f9fa";
+  labelloc="t";
+  labeljust="l";
+  label="AST — varoom contador = 0 ;";
+  node0 [label="=", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node1 [label="contador", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node0 -> node1;
+  node2 [label="0", shape="ellipse", style=filled, fillcolor="#b3d4ff", fontcolor="black"];
+  node0 -> node2;
+}
