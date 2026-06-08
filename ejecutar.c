@@ -30,6 +30,8 @@ int main(int argc, char** argv) {
 
     imprimir_tokens(result);
     
+    // Fase 2: Agrupación de Sentencias
+    printf("\n\n>>> FASE 2: AGRUPACIÓN DE SENTENCIAS SIMBÓLICAS\n");
     ListaSentencias* sentencias = agrupar_sentencias(result);
     imprimir_sentencias(sentencias);
 
